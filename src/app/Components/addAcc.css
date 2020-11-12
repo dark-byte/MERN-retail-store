@@ -1,0 +1,22 @@
+.form-control{
+    border: solid 2px rgb(161, 161, 161);
+    outline: none;
+    padding: 20px;
+}
+
+.container{
+    max-width: 700px;
+    ;
+}
+
+.remove{
+    margin: 0;
+    max-width: 80px;
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+
+.add-ph{
+    border: 2px solid rgb(67, 149, 226);
+    color: rgb(67, 149, 226);
+}

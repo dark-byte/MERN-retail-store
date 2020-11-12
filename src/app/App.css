@@ -1,0 +1,40 @@
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+.h1{
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+.h1:hover, h1:active, .h1:focus{
+  color: black;
+  text-decoration: none;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.form-group{
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.form-control{
+  margin: 10px 0;
+  outline: none;
+}
+
+.btn{
+  outline: none;
+  margin-bottom: 10px ;
+  width: 100%;
+}
+
+.btm:active{outline: none;}
