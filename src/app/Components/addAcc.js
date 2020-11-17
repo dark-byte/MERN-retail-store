@@ -7,15 +7,29 @@ const http = new HttpService()
 function AddAcc() {
 
     useEffect(()=>{
-        setPh_nos([""])
+        setPh_nos(["",])
     }, [])
 
     const postAcc = (e) =>{
         e.preventDefault()
         var nm = name
+        let empty = false
         var phNos = ph_nos
-        http.postAccount(nm, phNos).then(res => {console.log(res)}, err => {console.log(err)})
-        console.log(name + "\n" + phNos)
+
+        phNos.forEach(i =>{
+            if(i === ""){
+                empty = true
+        }})
+
+        if(nm === ""){
+            console.log("Field empty")
+        } else{
+            if(empty){
+                phNos = []}
+            http.postAccount(nm, phNos).then(res => {console.log(res)}, err => {console.log(err)})
+            // http.getId().then(cnt => {console.log(cnt.cnt)})
+            console.log(name + "\n" + phNos)
+        }
     }
 
     const setValue = (e) =>{
@@ -46,7 +60,6 @@ function AddAcc() {
 
     const [name, setName] = useState("")
     const [ph_nos, setPh_nos] = useState([])
-
 
     return(
         <form>

@@ -2,6 +2,11 @@
     border: solid 2px rgb(161, 161, 161);
     outline: none;
     padding: 20px;
+    width: 100%;
+}
+form{
+    width: 100%;
+    max-width: 600px;
 }
 
 .container{

@@ -53,20 +53,21 @@ function AccountsMain(){
 
     return(
         <div className="fragment-acc-main container">
-            <div className="top row">
-                <input onChange={searchChange} className="input-control search col-4" placeholder="Search"></input>
-                <Link className="btn btn add-acc" to="/add-acc">Add Account</Link>
+            <div className="top">
+                <input onChange={searchChange} className="input-control search" placeholder="Search"></input>
+                <Link className="btn btn-outline-primary add-acc" to="/add-acc">Add Account</Link>
             </div>
+            <hr></hr>
             {filtered? 
             <div className="list-group">
                 {filtered.map(i =>
-                    <div key={i.id} style={{display:"flex"}}>
-                    <Link style={{padding: "10px 25px"}} to={`/${i.id}`} key={i.name} className="list-group-item">
+                    <div key={i.id} className="list-group-item" style={{display:"flex"}}>
+                    <Link style={{width: "100%"}} to={`/${i.id}`}>
                         <label>{i.name}</label>
                         <label style={{float: "right"}}>{i.id}</label><b>
-                        <label style={{float:"right", fontWeight:"lighter"}}>{"Acc Id: \u00a0\u00a0"}</label></b>
+                        <label style={{float:"right", fontWeight:"300"}}>{"Acc Id: \u00a0\u00a0"}</label></b>
                     </Link>
-                        <button id={i.id} onClick={delAcc} className="del-acc">Delete</button>
+                        <button id={i.id} onClick={delAcc} className="btn btn-outline-danger del-acc">Delete</button>
                     </div> )
                     } 
             </div>: <h2>Account Not Found!</h2>}

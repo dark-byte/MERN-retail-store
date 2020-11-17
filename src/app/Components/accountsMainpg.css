@@ -1,6 +1,13 @@
+
 .list-group-item{
     font-size: 18px;
+    display: flex;
+    align-items: center;
     width: 100%;
+}
+
+label{
+    color: black;
 }
 
 .list-group{
@@ -29,7 +36,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(177, 177, 177);
-    width: 80%;
+    min-width: 70%;
     margin-right: 10px;
 }
 .search:focus{
@@ -38,21 +45,12 @@
 
 .add-acc{
     background-color: rgb(233, 233, 233);
-    width: 20%;
+    margin: 0;
     margin-left: 20px;
 }
 
 .del-acc{
-    border: none;
-    background: none;
-    color: rgb(235, 69, 69);
+    margin: 0;
     margin-left: 20px;
-    padding: 10px 0;
     max-width: 70px;
-}
-.del-acc:hover{
-    text-decoration: underline;
-}
-.del-acc:active{
-    color: rgb(209, 0, 0);
 }

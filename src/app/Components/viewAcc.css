@@ -1,0 +1,30 @@
+h2{
+    text-align: center;
+    font-weight: 300;
+}
+
+.ph-title, .ph{
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.ph-title{
+    margin-right: 20px;
+}
+
+
+
+.nm-row{
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.form-control{
+    margin-top: 0px;
+}
+
+.total{
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+}
